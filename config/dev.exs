@@ -3,7 +3,7 @@ use Mix.Config
 # Configure your database
 config :messengyr, Messengyr.Repo,
   username: "postgres",
-  password: "postgres",
+  password: "Chuchi22#7",
   database: "messengyr_dev",
   hostname: "localhost",
   show_sensitive_data_on_connection_error: true,
