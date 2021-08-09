@@ -16,7 +16,8 @@ defmodule Messengyr.Accounts do
     %User{}
     |> cast(params, [:username, :email, :password])
     |> validate_required([:username, :email, :password])
-    |> unique_constraint(:username, :email)
+    |> unique_constraint(:email)
+    |> unique_constraint(:username)
     |> validate_format(:email, ~r/@/)
     |> validate_format(:username, ~r/^[a-zA-Z0-9]*$/)
     |> validate_length(:password, min: 4)
